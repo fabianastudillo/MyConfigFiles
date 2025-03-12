@@ -32,7 +32,7 @@ config = {
     background = {
         {
             source = {
-                File = "/Users/fabian/peakpx.jpg"
+                File = (os.getenv("USERPROFILE") or os.getenv("HOME")) .. "\\peakpx.jpg",
             },
             hsb = {
                 hue = 1.0,
